@@ -310,7 +310,7 @@ fastify.post("/getFlight", async (request) => {
 });
 
 try {
-  await fastify.listen({ port: 8001, host: "localhost" });
+  await fastify.listen({ port: 8001, host: "0.0.0.0" });
   console.log("Fastify data source is running or port: 8001");
 } catch (err) {
   fastify.log.error(err);
